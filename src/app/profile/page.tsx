@@ -3,9 +3,6 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { 
   FaUser, 
-  FaEnvelope, 
-  FaPhone, 
-  FaWhatsapp, 
   FaEdit, 
   FaSave, 
   FaTimes

@@ -5,11 +5,8 @@ import {
   FaCarSide, 
   FaListAlt, 
   FaUser, 
-  FaSignOutAlt, 
   FaUsers,
   FaCar,
-  FaChartBar,
-  FaHome,
   FaClock,
   FaIdCard,
   FaCreditCard,
@@ -27,7 +24,6 @@ interface DashboardLayoutProps {
 
 export default function DashboardLayout({ children, isAdmin = false }: DashboardLayoutProps) {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [userRole, setUserRole] = useState<string>('user');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [unreadMessageCount, setUnreadMessageCount] = useState(0);
   const router = useRouter();
@@ -41,7 +37,6 @@ export default function DashboardLayout({ children, isAdmin = false }: Dashboard
         setIsLoggedIn(true);
         try {
           const payload = JSON.parse(atob(token.split(".")[1]));
-          setUserRole(payload.role);
           
           // Redirect admin users to admin dashboard if they're on regular dashboard
           if (payload.role === 'admin' && pathname === '/dashboard') {
@@ -54,11 +49,9 @@ export default function DashboardLayout({ children, isAdmin = false }: Dashboard
           }
         } catch {
           setIsLoggedIn(false);
-          setUserRole('user');
         }
       } else {
         setIsLoggedIn(false);
-        setUserRole('user');
         router.push('/login');
       }
     }
@@ -99,12 +92,7 @@ export default function DashboardLayout({ children, isAdmin = false }: Dashboard
   const handleLogout = () => {
     localStorage.removeItem("token");
     setIsLoggedIn(false);
-    setUserRole('user');
     router.push("/");
-  };
-
-  const isActive = (path: string) => {
-    return pathname === path;
   };
 
   if (!isLoggedIn) {

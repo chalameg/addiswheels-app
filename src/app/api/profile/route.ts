@@ -51,7 +51,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ user: userProfile });
 
   } catch (error) {
-    console.error('Error fetching profile:', error);
+    console.error('Error getting profile:', error);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

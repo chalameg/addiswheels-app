@@ -1,13 +1,11 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useRouter } from 'next/navigation';
-import { FaBell, FaCheck, FaTimes } from 'react-icons/fa';
+import { FaBell, FaCheck } from 'react-icons/fa';
 import DashboardLayout from '@/components/DashboardLayout';
 import { useNotifications } from '@/hooks/useNotifications';
 
 export default function NotificationsPage() {
-  const router = useRouter();
   const { notifications, loading, markAsRead, unreadCount } = useNotifications();
   const [markingAsRead, setMarkingAsRead] = useState(false);
 

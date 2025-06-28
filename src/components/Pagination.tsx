@@ -1,18 +1,15 @@
 import React from 'react';
-import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 interface PaginationProps {
   currentPage: number;
   totalPages: number;
   onPageChange: (page: number) => void;
-  className?: string;
 }
 
 export default function Pagination({ 
   currentPage, 
   totalPages, 
-  onPageChange, 
-  className = "" 
+  onPageChange
 }: PaginationProps) {
   if (totalPages <= 1) return null;
 

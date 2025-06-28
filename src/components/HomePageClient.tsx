@@ -1,7 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import toast, { Toaster } from "react-hot-toast";
 import VehicleCard from "@/components/VehicleCard";
 
@@ -36,7 +35,6 @@ export default function HomePageClient() {
   const [isAdmin, setIsAdmin] = useState(false);
   const [savedVehicles, setSavedVehicles] = useState<Set<number>>(new Set());
   const [savingStates, setSavingStates] = useState<{ [key: number]: boolean }>({});
-  const router = useRouter();
 
   const fetchFeaturedVehicles = () => {
     setLoading(true);
@@ -215,12 +213,6 @@ export default function HomePageClient() {
             <div className="text-gray-400 text-6xl mb-4">🚗</div>
             <h3 className="text-xl font-semibold text-gray-900 mb-2">No featured vehicles available</h3>
             <p className="text-gray-600 mb-6">Check back soon for our latest featured vehicles</p>
-            <Link
-              href="/vehicles"
-              className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors"
-            >
-              Browse All Vehicles
-            </Link>
           </div>
         ) : (
           <>

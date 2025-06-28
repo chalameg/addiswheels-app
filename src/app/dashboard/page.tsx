@@ -4,10 +4,7 @@ import { useRouter } from "next/navigation";
 import { 
   FaHeart,
   FaRegHeart,
-  FaCar,
-  FaMotorcycle,
-  FaDollarSign,
-  FaExclamationTriangle
+  FaCar
 } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import DashboardLayout from "@/components/DashboardLayout";

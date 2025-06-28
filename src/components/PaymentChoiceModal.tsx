@@ -1,6 +1,5 @@
 'use client';
 
-import { useState } from 'react';
 import { FaCrown, FaCreditCard } from 'react-icons/fa';
 
 interface PaymentChoiceModalProps {

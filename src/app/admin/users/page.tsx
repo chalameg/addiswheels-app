@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { FaUsers, FaUserEdit, FaTrash, FaCheck, FaTimes, FaBan, FaUserCheck, FaSearch } from "react-icons/fa";
+import { FaUsers } from "react-icons/fa";
 import DashboardLayout from "@/components/DashboardLayout";
 import Pagination from "@/components/Pagination";
 
@@ -28,8 +28,6 @@ interface PaginationData {
 export default function AdminUsersPage() {
   const [users, setUsers] = useState<User[]>([]);
   const [loading, setLoading] = useState(true);
-  const [updatingRole, setUpdatingRole] = useState<number | null>(null);
-  const [updatingBlock, setUpdatingBlock] = useState<number | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const [searchTerm, setSearchTerm] = useState("");
   const [roleFilter, setRoleFilter] = useState("");
@@ -75,17 +73,11 @@ export default function AdminUsersPage() {
     }
   };
 
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    setCurrentPage(1); // Reset to first page when searching
-  };
-
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
   };
 
   const handleRoleChange = async (userId: number, newRole: string) => {
-    setUpdatingRole(userId);
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(`/api/admin/users/${userId}/role`, {
@@ -106,13 +98,10 @@ export default function AdminUsersPage() {
       }
     } catch (error) {
       console.error("Error updating user role:", error);
-    } finally {
-      setUpdatingRole(null);
     }
   };
 
   const handleBlockUser = async (userId: number, blocked: boolean) => {
-    setUpdatingBlock(userId);
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(`/api/admin/users/${userId}/block`, {
@@ -133,42 +122,7 @@ export default function AdminUsersPage() {
       }
     } catch (error) {
       console.error("Error updating user block status:", error);
-    } finally {
-      setUpdatingBlock(null);
     }
-  };
-
-  const handleDeleteUser = async (userId: number) => {
-    if (!confirm("Are you sure you want to delete this user? This action cannot be undone.")) {
-      return;
-    }
-
-    try {
-      const token = localStorage.getItem("token");
-      const response = await fetch(`/api/admin/users/${userId}`, {
-        method: "DELETE",
-        headers: { Authorization: `Bearer ${token}` }
-      });
-
-      if (response.ok) {
-        setUsers(prev => prev.filter(user => user.id !== userId));
-        // Refresh the current page
-        fetchUsers();
-      } else {
-        console.error("Failed to delete user");
-      }
-    } catch (error) {
-      console.error("Error deleting user:", error);
-    }
-  };
-
-  const formatDate = (dateString: string) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric'
-    });
   };
 
   if (loading) {

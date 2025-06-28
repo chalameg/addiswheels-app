@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
-import { FaCar, FaMotorcycle, FaClock, FaDollarSign, FaCheckCircle, FaExclamationTriangle, FaHeart, FaRegHeart, FaComments } from "react-icons/fa";
+import { FaExclamationTriangle, FaHeart, FaRegHeart } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import PriceDisplay from "@/components/PriceDisplay";
 import ChatModal from "@/components/ChatModal";

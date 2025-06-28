@@ -1,10 +1,8 @@
 "use client";
-import React, { useEffect, useState, useRef } from "react";
-import Link from "next/link";
-import { FaHeart, FaRegHeart, FaSearch, FaFilter } from "react-icons/fa";
+import React, { useEffect, useState } from "react";
+import { FaSearch, FaFilter } from "react-icons/fa";
 import toast, { Toaster } from "react-hot-toast";
 import VehicleCard from "@/components/VehicleCard";
-import PriceDisplay from "@/components/PriceDisplay";
 
 interface Vehicle {
   id: number;

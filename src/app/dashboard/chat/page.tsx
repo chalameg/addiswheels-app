@@ -5,6 +5,7 @@ import { FaComments, FaUser, FaCar, FaClock, FaExclamationTriangle } from 'react
 import { toast } from 'react-hot-toast';
 import ChatModal from '@/components/ChatModal';
 import DashboardLayout from '@/components/DashboardLayout';
+import Link from 'next/link';
 
 interface Conversation {
   vehicleId: number;
@@ -171,14 +172,14 @@ export default function ChatPage() {
             <FaComments className="text-6xl text-gray-400 mx-auto mb-4" />
             <h2 className="text-2xl font-bold text-gray-900 mb-2">No Conversations Yet</h2>
             <p className="text-gray-600 mb-6">
-              Start chatting with vehicle owners or renters by visiting a vehicle's detail page and clicking "Start Chat".
+              Start chatting with vehicle owners or renters by visiting a vehicle&apos;s detail page and clicking &quot;Start Chat&quot;.
             </p>
-            <a
+            <Link
               href="/"
               className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
             >
               Browse Vehicles
-            </a>
+            </Link>
           </div>
         ) : (
           <div className="space-y-4">

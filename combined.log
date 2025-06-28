@@ -4681,3 +4681,7 @@
 {"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:01:07.568Z","userId":2}
 {"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:01:07.603Z"}
 {"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:01:07.606Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:01:37.611Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:01:37.613Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:01:37.617Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:01:37.620Z","userId":2}

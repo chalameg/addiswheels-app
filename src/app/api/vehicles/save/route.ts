@@ -16,7 +16,7 @@ async function verifyToken(req: NextRequest) {
   try {
     const decoded = jwt.verify(token, JWT_SECRET) as any;
     return decoded;
-  } catch (error) {
+  } catch {
     return null;
   }
 }

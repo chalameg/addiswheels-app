@@ -1,7 +1,7 @@
 export const config = {
   listingLimit: {
     enabled: process.env.LISTING_LIMIT_ENFORCED === 'true',
-    freeListings: 0,
+    freeListings: 3,
     pricePerListing: 500, // ETB
   },
   subscriptionPlans: [

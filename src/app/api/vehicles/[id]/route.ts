@@ -6,7 +6,7 @@ const prisma = new PrismaClient();
 
 export async function GET(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params }
 ) {
   try {
     const vehicleId = parseInt(params.id);
@@ -44,7 +44,7 @@ export async function GET(
 
 export async function PATCH(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params }
 ) {
   try {
     const vehicleId = parseInt(params.id);
@@ -112,7 +112,7 @@ export async function PATCH(
 
 export async function DELETE(
   req: NextRequest,
-  { params }: { params: { id: string } }
+  { params }: { params}
 ) {
   try {
     const vehicleId = parseInt(params.id);

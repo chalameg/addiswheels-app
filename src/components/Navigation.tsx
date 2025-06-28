@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { FaBars, FaTimes, FaUser, FaSignOutAlt } from "react-icons/fa";
+import { FaUser, FaSignOutAlt } from "react-icons/fa";
 
 interface NavigationProps {
   className?: string;
