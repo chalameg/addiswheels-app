@@ -4595,3 +4595,89 @@
 {"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:52:37.644Z","userId":2}
 {"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:52:40.109Z"}
 {"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T09:52:40.111Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:53:07.564Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:53:07.568Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:53:07.623Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:53:07.627Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:53:10.109Z"}
+{"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T09:53:10.111Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:53:37.576Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:53:37.579Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:53:37.626Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:53:37.628Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:53:40.109Z"}
+{"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T09:53:40.112Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:54:07.632Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:54:07.635Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:54:07.672Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:54:07.676Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:54:37.558Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:54:37.560Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:54:37.602Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:54:37.604Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:54:52.259Z"}
+{"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T09:54:52.262Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:55:07.578Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:55:07.581Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:55:07.634Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:55:07.636Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:55:37.564Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:55:37.566Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:55:37.610Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:55:37.613Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:55:52.291Z"}
+{"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T09:55:52.293Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:56:07.552Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:56:07.554Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:56:07.603Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:56:07.606Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:56:37.563Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:56:37.565Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:56:37.668Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:56:37.671Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:56:52.106Z"}
+{"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T09:56:52.108Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:57:07.554Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:57:07.556Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:57:07.599Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:57:07.602Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:57:37.662Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:57:37.664Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:57:37.686Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:57:37.689Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:57:52.672Z"}
+{"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T09:57:52.679Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:58:07.648Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:58:07.651Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:58:07.675Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:58:07.681Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:58:37.595Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:58:37.599Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:58:37.660Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:58:37.663Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:58:52.427Z"}
+{"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T09:58:52.435Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:59:07.685Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:59:07.689Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:59:07.727Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:59:07.731Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:59:37.556Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:59:37.558Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:59:37.604Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T09:59:37.607Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T09:59:52.156Z"}
+{"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T09:59:52.159Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:00:07.555Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:00:07.557Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:00:07.597Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:00:07.600Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:00:37.696Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:00:37.698Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:00:37.710Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:00:37.713Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:00:52.147Z"}
+{"level":"info","message":"Token verified successfully","role":"admin","timestamp":"2025-06-28T10:00:52.151Z","userId":17}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:01:07.565Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:01:07.568Z","userId":2}
+{"level":"info","message":"JWT_SECRET loaded:","secret":"***","timestamp":"2025-06-28T10:01:07.603Z"}
+{"level":"info","message":"Token verified successfully","role":"user","timestamp":"2025-06-28T10:01:07.606Z","userId":2}

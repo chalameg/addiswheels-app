@@ -1,36 +1,221 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AddisWheels - Vehicle Rental Platform
+
+AddisWheels is a comprehensive vehicle rental platform built with Next.js, TypeScript, and Prisma. The platform connects vehicle owners with renters, providing a seamless experience for listing, discovering, and renting vehicles.
+
+## Features
+
+### 🚗 Vehicle Management
+- **Vehicle Listings**: Create, edit, and manage vehicle listings with multiple images
+- **Search & Filter**: Advanced search functionality with filters for price, location, vehicle type
+- **Image Gallery**: Multiple image support with gallery view
+- **Featured Listings**: Highlight premium vehicles
+- **Save Vehicles**: Users can save vehicles to their favorites
+
+### 💳 Payment & Subscription System
+- **One-time Payments**: Pay per vehicle listing
+- **Subscription Plans**: Monthly, quarterly, and yearly plans for unlimited listings
+- **Payment Processing**: Secure payment submission and management
+- **Admin Payment Management**: Approve/reject payments with notifications
+
+### 🔔 Notification System
+- **Real-time Notifications**: Instant notifications for verification, payments, and vehicle approvals
+- **Notification Dashboard**: Centralized notification management
+- **Unread Indicators**: Visual indicators for unread notifications
+- **Toast Alerts**: Real-time toast notifications for new events
+
+### 👥 User Management
+- **User Registration & Authentication**: Secure user registration and login
+- **Profile Management**: Complete user profile with contact information
+- **User Verification**: Document verification system with admin approval
+- **Role-based Access**: User, admin, and owner roles
+- **User Blocking**: Admin can block/unblock users
+
+### 🛡️ Admin Dashboard
+- **User Management**: View, block, and manage user roles
+- **Vehicle Approval**: Approve/reject vehicle listings
+- **Payment Management**: Process and approve payments
+- **Subscription Management**: Manage user subscriptions
+- **Verification System**: Approve/reject user verifications
+- **Analytics**: Dashboard with key metrics and quick actions
+
+### 💬 Messaging System
+- **Real-time Chat**: Direct messaging between users
+- **Conversation Management**: Organize and track conversations
+- **Message Notifications**: Notify users of new messages
+- **Read Receipts**: Track message read status
+
+### 🌍 Multi-currency Support
+- **Exchange Rate Integration**: Real-time currency conversion
+- **Price Display**: Show prices in multiple currencies
+- **Dynamic Pricing**: Automatic price updates based on exchange rates
+
+## Tech Stack
+
+- **Frontend**: Next.js 14, TypeScript, Tailwind CSS
+- **Backend**: Next.js API Routes, Prisma ORM
+- **Database**: PostgreSQL (via Prisma)
+- **Authentication**: Custom JWT-based authentication
+- **File Upload**: Built-in Next.js file handling
+- **Styling**: Tailwind CSS with custom components
+- **Testing**: Jest for API testing
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+ 
+- PostgreSQL database
+- npm or yarn package manager
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone <repository-url>
+   cd bikerent-app
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up environment variables**
+   Create a `.env.local` file in the root directory:
+   ```env
+   DATABASE_URL="postgresql://username:password@localhost:5432/bikerent"
+   JWT_SECRET="your-jwt-secret-key"
+   NEXTAUTH_SECRET="your-nextauth-secret"
+   NEXTAUTH_URL="http://localhost:3000"
+   ```
+
+4. **Set up the database**
+   ```bash
+   npx prisma generate
+   npx prisma db push
+   npx prisma db seed
+   ```
+
+5. **Run the development server**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
+
+## Database Schema
+
+The application uses Prisma with the following main models:
+
+- **User**: User accounts with roles, verification status, and contact info
+- **Vehicle**: Vehicle listings with images, pricing, and owner relations
+- **Booking**: Rental bookings with dates and pricing
+- **Payment**: Payment records for listings and subscriptions
+- **Subscription**: User subscription plans and status
+- **Notification**: User notifications with read status
+- **Message**: Chat messages between users
+
+## API Endpoints
+
+### Authentication
+- `POST /api/register` - User registration
+- `POST /api/login` - User login
+- `GET /api/profile` - Get user profile
+
+### Vehicles
+- `GET /api/vehicles` - List all vehicles
+- `POST /api/vehicles/create` - Create new vehicle
+- `GET /api/vehicles/[id]` - Get vehicle details
+- `GET /api/vehicles/my` - Get user's vehicles
+- `POST /api/vehicles/save` - Save vehicle to favorites
+
+### Payments & Subscriptions
+- `POST /api/payments/submit` - Submit payment
+- `POST /api/subscriptions/submit` - Submit subscription
+- `GET /api/admin/payments` - Admin payment management
+- `GET /api/admin/subscriptions` - Admin subscription management
+
+### Notifications & Messages
+- `GET /api/notifications` - Get user notifications
+- `POST /api/notifications/mark-read` - Mark notifications as read
+- `GET /api/messages/conversations` - Get user conversations
+- `POST /api/messages` - Send message
+
+### Admin
+- `GET /api/admin/users` - Manage users
+- `GET /api/admin/vehicles` - Manage vehicles
+- `GET /api/admin/verifications` - Manage verifications
+
+## Project Structure
+
+```
+src/
+├── app/                    # Next.js app directory
+│   ├── api/               # API routes
+│   ├── admin/             # Admin dashboard pages
+│   ├── dashboard/         # User dashboard pages
+│   └── vehicles/          # Vehicle-related pages
+├── components/            # Reusable React components
+├── contexts/              # React contexts
+├── hooks/                 # Custom React hooks
+├── utils/                 # Utility functions
+└── middleware.ts          # Next.js middleware
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Testing
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run the test suite:
+```bash
+npm test
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+The application can be deployed to Vercel or any other Next.js-compatible platform:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Build the application**
+   ```bash
+   npm run build
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Deploy to Vercel**
+   ```bash
+   vercel --prod
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Deployment (to cPanel or Node.js Server)
 
-## Deploy on Vercel
+> For full-featured deployment (with backend logic):
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Set your `.env.production`
+2. Build the app:
+```bash
+npm run build
+```
+3. Start with PM2:
+```bash
+pm2 start npm --name "addiswheels" -- start
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+For static-only version:
+```bash
+npm run build && npm run export
+```
+Upload the `out/` folder to your subdomain in cPanel.
+
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Add tests if applicable
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Support
+
+For support and questions, please open an issue in the repository or contact the development team. 
