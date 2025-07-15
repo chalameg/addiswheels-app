@@ -44,6 +44,13 @@ AddisWheels is a comprehensive vehicle rental platform built with Next.js, TypeS
 - **Message Notifications**: Notify users of new messages
 - **Read Receipts**: Track message read status
 
+### 🤖 AI Chatbot
+- **Gemini AI Integration**: Powered by Google's Gemini AI
+- **Booking Assistance**: Help users with booking process
+- **Vehicle Information**: Provide details about available vehicles
+- **Payment Support**: Answer questions about payments and subscriptions
+- **Smart Responses**: Context-aware conversations with message history
+
 ### 🌍 Multi-currency Support
 - **Exchange Rate Integration**: Real-time currency conversion
 - **Price Display**: Show prices in multiple currencies
@@ -71,7 +78,7 @@ AddisWheels is a comprehensive vehicle rental platform built with Next.js, TypeS
 1. **Clone the repository**
    ```bash
    git clone <repository-url>
-   cd bikerent-app
+   cd addiswheels-app
    ```
 
 2. **Install dependencies**
@@ -82,10 +89,15 @@ AddisWheels is a comprehensive vehicle rental platform built with Next.js, TypeS
 3. **Set up environment variables**
    Create a `.env.local` file in the root directory:
    ```env
-   DATABASE_URL="postgresql://username:password@localhost:5432/bikerent"
+   DATABASE_URL="postgresql://username:password@localhost:5432/addiswheels"
    JWT_SECRET="your-jwt-secret-key"
    NEXTAUTH_SECRET="your-nextauth-secret"
    NEXTAUTH_URL="http://localhost:3000"
+   
+   # Chatbot Configuration (Optional)
+   ENABLE_CHATBOT=true
+   GEMINI_API_KEY="your-gemini-api-key-here"
+   NEXT_PUBLIC_ENABLE_CHATBOT=true
    ```
 
 4. **Set up the database**
@@ -152,12 +164,16 @@ The application uses Prisma with the following main models:
 src/
 ├── app/                    # Next.js app directory
 │   ├── api/               # API routes
+│   │   └── chatbot/       # Chatbot API endpoint
 │   ├── admin/             # Admin dashboard pages
 │   ├── dashboard/         # User dashboard pages
 │   └── vehicles/          # Vehicle-related pages
 ├── components/            # Reusable React components
+│   └── Chatbot.tsx        # AI chatbot component
 ├── contexts/              # React contexts
 ├── hooks/                 # Custom React hooks
+├── lib/                   # Library functions
+│   └── gemini.ts          # Gemini AI integration
 ├── utils/                 # Utility functions
 └── middleware.ts          # Next.js middleware
 ```
@@ -215,6 +231,10 @@ Upload the `out/` folder to your subdomain in cPanel.
 ## License
 
 This project is licensed under the MIT License.
+
+## Chatbot Setup
+
+For detailed chatbot setup instructions, see [CHATBOT_SETUP.md](./CHATBOT_SETUP.md).
 
 ## Support
 

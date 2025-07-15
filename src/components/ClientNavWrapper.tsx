@@ -2,6 +2,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import Navigation from "@/components/Navigation";
+import Chatbot from "@/components/Chatbot";
 
 export default function ClientNavWrapper({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
@@ -14,6 +15,7 @@ export default function ClientNavWrapper({ children }: { children: React.ReactNo
     <>
       {!isDashboard && <Navigation />}
       {children}
+      <Chatbot />
     </>
   );
 } 
